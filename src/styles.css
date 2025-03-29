@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ body{
+  font-family: 'Merriweather', serif;
+ }
+
+ 
+
+
