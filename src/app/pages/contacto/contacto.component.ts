@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../../shared/header/header.component';
 
 @Component({
   selector: 'app-contacto',
-  imports: [],
+  imports: [HeaderComponent],
   templateUrl: './contacto.component.html',
   styleUrl: './contacto.component.css'
 })

@@ -26,5 +26,10 @@ export const routes: Routes = [
         path: 'contacto',
         component: ContactoComponent
     },
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    }
        
 ];

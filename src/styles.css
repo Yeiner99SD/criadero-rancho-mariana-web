@@ -9,6 +9,9 @@
   font-family: 'Merriweather', serif;
  }
 
+ .bg-color{
+    background: linear-gradient(to right, #A18262, #3B3024);
+}
  
 
 
