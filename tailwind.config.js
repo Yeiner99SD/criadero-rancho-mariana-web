@@ -18,7 +18,9 @@ module.exports = {
     backgroundImage:{
       hero: 'url(/images/finca.webp)',
       heroescuela: 'url(/images/poster.webp)',
-      escuela: 'url(/images/imagenescuelaRM.png)'
+      escuela: 'url(/images/imagenescuelaRM.png)',
+      herogaleria: 'url(/images/Ensilladero.jpg)',
+      torno: 'url(/images/torno.jpg)'
     },
     extend: {
       colors: {

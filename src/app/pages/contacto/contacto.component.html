@@ -1,1 +1,132 @@
 <app-header></app-header>
+
+<!-------------------------------HERO-------------------->
+<div class="relative bg-torno h-[84vh] w-full  bg-cover bg-center" >
+    <div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center px-12">
+      <h1 class="text-white text-center text-1xl lg:text-2xl font-light mb-2 tracking-wide animate-fade-in">
+        CONTACTO <span class="text-special">CRIADERO RANCHO MARIANA</span>
+      </h1>
+  
+      <div class="m-6 text-center">
+        <p class="text-white text-3xl lg:text-5xl font-light mb-2 animate-fade-in">
+        ¡ Comunicate con nosotros o dejanos saber<br />
+          tus inquietudes !
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-------------------------------DATOS DE CONTACTO-------------------->
+<hero-section text="Nuestros contactos"></hero-section>
+
+
+<div class="max-w-6xl mx-auto py-10 grid grid-cols-1 md:grid-cols-4 md:items-center gap-8 text-white">
+  
+  
+    <div class="flex items-center space-x-4">
+      <div class="p-3 border rounded-full">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7z"></path>
+          <circle cx="12" cy="9" r="2.5"></circle>
+        </svg>
+      </div>
+      <div>
+        <h3 class="font-bold">Ubicación</h3>
+        <p class="text-sm">Criadero Rancho Mariana, vereda La Rapida, Km2 Vía La victoria, San Antonio del Tequendama, Cundimarca, Colombia.</p>
+      </div>
+    </div>
+  
+
+    <div class="flex items-start space-x-4">
+      <div class="p-3 border rounded-full">
+        <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 2H19.0049C20.1068 2 21 2.89821 21 3.9908V20.0092C21 21.1087 20.1074 22 19.0049 22H3V2ZM7 4H5V20H7V4ZM9 20H19V4H9V20ZM11 16C11 14.3431 12.3431 13 14 13C15.6569 13 17 14.3431 17 16H11ZM14 12C12.8954 12 12 11.1046 12 10C12 8.89543 12.8954 8 14 8C15.1046 8 16 8.89543 16 10C16 11.1046 15.1046 12 14 12ZM22 6H24V10H22V6ZM22 12H24V16H22V12Z"></path></svg>
+      </div>
+      <div>
+        <h3 class="font-bold">Contáctenos</h3>
+        <p class="text-sm">+ (57) 321 12345678</p>
+      </div>
+    </div>
+  
+  
+    <div class="flex items-start space-x-4">
+      <div class="p-3 border rounded-full">
+        <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
+      </div>
+      <div>
+        <h3 class="font-bold">Abierto</h3>
+        <p class="text-sm">Lun - Dom: 8am - 4pm</p>
+        
+      </div>
+    </div>
+  
+   
+    <div class="flex items-start space-x-4">
+      <div class="p-3 border rounded-full">
+        <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>
+      </div>
+      <div>
+        <h3 class="font-bold">E-Mail</h3>
+        <p class="text-sm">crpalonegro</p>
+      </div>
+    </div>
+  
+  </div>
+   
+  
+
+
+
+
+<!-------------------------------FORM CONTACTO-------------------->
+<div class="container mx-auto flex items-center justify-center">
+  <div class="h-px bg-white w-full"></div>
+  <div class="mx-8 text-center">
+    <h1 class="text-special text-2xl md:text-3xl font-semibold">¿Tienes alguna pregunta?</h1>  
+  </div>
+  <div class="h-px bg-white w-full"></div>
+</div>
+
+<div class="max-w-6xl mx-auto mt-20 mb-20 flex flex-col items-center justify-center lg:flex-row gap-10">
+ 
+  <div class="bg-header p-8 rounded-lg shadow-md w-[90vw] ">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6">Formulario de Contacto</h2>
+      <form>
+          <div class="mb-4">
+              <label class="block text-gray-700 font-medium">Nombre</label>
+              <input type="text" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          </div>
+      
+          <div class="mb-4">
+              <label class="block text-gray-700 font-medium">Teléfono / Celular</label>
+              <input type="tel" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          </div>
+      
+          <div class="mb-4">
+              <label class="block text-gray-700 font-medium">Correo Electrónico</label>
+              <input type="email" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          </div>
+      
+          <div class="mb-4">
+              <label class="block text-gray-700 font-medium">Mensaje</label>
+              <textarea class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" rows="4"></textarea>
+          </div>
+      
+          <button type="submit" class="w-full text-white p-2 rounded-lg font-semibold bg-yellow-700 hover:bg-special transition">
+              Enviar Mensaje
+          </button>
+      </form>
+  </div>
+
+  <!-- Mapa -->
+  <div class="w-full  flex justify-center overflow-hidden">
+      <google-map 
+          class="rounded-lg shadow-md w-full h-64 lg:h-96"
+          [center]="center"
+          [zoom]="zoom">
+      </google-map>
+  </div>
+</div>
+  
+
+
+  <app-footer></app-footer>
