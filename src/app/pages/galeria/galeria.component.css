@@ -1,0 +1,5 @@
+.hero{
+    background-image: url("/public/finca.webp");
+    background-position: center;
+    background-size: cover;
+}

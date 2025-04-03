@@ -1,6 +1,9 @@
 .bg-color{
     background: linear-gradient(to right, #A18262, #3B3024);
 }
-.bg-without{
-    background: transparent;
+
+@media (min-width: 960px) { 
+    ul {
+        background: transparent !important;
+    }
 }

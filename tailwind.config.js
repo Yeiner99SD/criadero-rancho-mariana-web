@@ -16,7 +16,9 @@ module.exports = {
       xl: '1200px'
     },
     backgroundImage:{
-      hero: 'url(/images/finca.webp)'
+      hero: 'url(/images/finca.webp)',
+      heroescuela: 'url(/images/poster.webp)',
+      escuela: 'url(/images/imagenescuelaRM.png)'
     },
     extend: {
       colors: {

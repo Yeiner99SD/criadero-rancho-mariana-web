@@ -13,5 +13,19 @@
     background: linear-gradient(to right, #A18262, #3B3024);
 }
  
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-220px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeInDown 1000ms ease-out forwards;
+  }
 
 

@@ -1,30 +1,26 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { EscuelaComponent } from './pages/escuela/escuela.component';
-import { GaleriaComponent } from './pages/galeria/galeria.component';
-import { EjemplaresComponent } from './pages/ejemplares/ejemplares.component';
-import { ContactoComponent } from './pages/contacto/contacto.component';
+
 
 export const routes: Routes = [
     {
         path: 'home',
-        component: HomeComponent
+        loadComponent: () => import('./pages/home/home.component').then((c) => c.HomeComponent)
     },
     {
         path: 'escuela',
-        component: EscuelaComponent
+        loadComponent: () => import('./pages/escuela/escuela.component').then((c) => c.EscuelaComponent)
     },
     {
         path: 'galeria',
-        component: GaleriaComponent
+        loadComponent: () => import('./pages/galeria/galeria.component').then((c) => c.GaleriaComponent)
     },
     {
         path: 'ejemplares',
-        component: EjemplaresComponent
+        loadComponent: () => import('./pages/ejemplares/ejemplares.component').then((c) => c.EjemplaresComponent)
     },
     {
         path: 'contacto',
-        component: ContactoComponent
+        loadComponent: () => import('./pages/contacto/contacto.component').then((c)=> c.ContactoComponent)
     },
     {
         path: '',

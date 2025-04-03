@@ -11,24 +11,25 @@
                 <i class="ri-menu-line text-4xl text-white"></i>
             </button>
 
-            <ul [ngClass]="{'h-0 overflow-hidden': openMenu, 'h-auto p-4': !openMenu}" 
-                class="fixed w-full bg-header lg:bg-transparent top-[90px] left-0 right-0 flex flex-col gap-4 
+            <ul [ngClass]="{'h-0 overflow-hidden': !openMenu, 'h-auto p-4': openMenu}" 
+                class="fixed w-full bg-color  lg:bg-transparent top-[90px] left-0 right-0 flex flex-col gap-4 
                 lg:relative lg:flex-row lg:items-center lg:justify-center lg:w-auto lg:p-0 lg:top-0 
                 lg:border-none lg:gap-8 lg:h-full transition-all duration-300 text-white items-center">
-                <li class="lg:px-6">
-                    <a routerLink="/home" class="transition-colors duration-300 hover:text-[#E5C97C]"  href="">Inicio</a>
+                <li class="lg:px-6 ">
+                    <a routerLink="/home" routerLinkActive="border-b-2  " class="transition-colors duration-300 hover:text-[#E5C97C]">Inicio</a>
                 </li>
                 <li class="lg:px-6">
-                    <a routerLink="/escuela" class="transition-colors duration-300 hover:text-[#E5C97C]" href="">Escuela</a>
+                    <a routerLink="/escuela" routerLinkActive="border-b-2" 
+                    class="transition-colors duration-300 hover:text-[#E5C97C]">Escuela</a>
                 </li>
                 <li class="lg:px-6">
-                    <a routerLink="/galeria" class="transition-colors duration-300 hover:text-[#E5C97C]" href="">Galería</a>
+                    <a routerLink="/galeria" routerLinkActive="border-b-2" class="transition-colors duration-300 hover:text-[#E5C97C]" href="">Galería</a>
                 </li>
                 <li class="lg:px-6">
-                    <a routerLink="/ejemplares" class="transition-colors duration-300 hover:text-[#E5C97C]" href="">Ejemplares</a>
+                    <a routerLink="/ejemplares" routerLinkActive="border-b-2" class="transition-colors duration-300 hover:text-[#E5C97C]" href="">Ejemplares</a>
                 </li>
                 <li class="lg:px-6">
-                    <a routerLink="/contacto" class="transition-colors duration-300 hover:text-[#E5C97C]" href="">Contacto</a>
+                    <a routerLink="/contacto" routerLinkActive="border-b-2" class="transition-colors duration-300 hover:text-[#E5C97C]" href="">Contacto</a>
                 </li>
             </ul>
         </nav>
