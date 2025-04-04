@@ -1,3 +1,16 @@
 
 
 <router-outlet></router-outlet>
+
+<button
+  class="fixed bottom-6 right-6 bg-special text-white p-3 rounded-full shadow-lg hover:bg-header transition transform hover:scale-110"
+  [ngClass]="{ 'animate-bounce': isBouncing, 'opacity-0 transition-opacity duration-500': !isBouncing }"
+  *ngIf="isVisible"
+  (click)="scrollToTop()"
+  aria-label="Volver arriba">
+  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)">
+    <path d="M12 4.83582L5.79291 11.0429L7.20712 12.4571L12 7.66424L16.7929 12.4571L18.2071 11.0429L12 4.83582ZM12 10.4857L5.79291 16.6928L7.20712 18.107L12 13.3141L16.7929 18.107L18.2071 16.6928L12 10.4857Z"></path>
+  </svg>
+</button>
+
+
