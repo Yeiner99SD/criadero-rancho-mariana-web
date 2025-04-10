@@ -1,1 +1,68 @@
 <app-header></app-header>
+
+
+<!-------------------------------HERO-------------------->
+<div class="relative bg-heroejemplares h-[84vh] w-full  bg-cover bg-center" >
+    <div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center px-12">
+      <h1 class="text-white text-center text-3xl lg:text-5xl font-light mb-2 tracking-wide animate-fade-in">
+        EJEMPLARES <span class="text-special">CRIADERO RANCHO MARIANA</span>
+      </h1>
+  
+      <div class="m-6 text-center">
+        <p class="text-white text-3xl lg:text-4xl font-light mb-2 animate-fade-in">
+        ¡Adquiere el servicio de <br />
+          nuestros ejemplares!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-------------------------------EJEMPLARES-------------------->
+
+  <hero-section text="Nuestros ejemplares"></hero-section>
+
+
+  <div class=" min-h-screen text-white py-10 px-4">
+    <p class="text-center text-lg  mb-10">
+      Algunos ejemplares disponibles en el criadero <span class="text-special">Rancho Mariana</span>
+    </p>
+  
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div
+        *ngFor="let horse of horses; let i = index"
+        class="bg-zinc-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+      >
+        <img
+          [src]="horse.image"
+          [alt]="horse.name"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">{{ horse.name }}</h3>
+          <p class="text-zinc-300 mb-2">{{ horse.description }}</p>
+          <p class="text-special font-bold text-lg mb-4">
+            Precio del servicio: ${{ horse.servicePrice | number }}
+          </p>
+          <p class="text-special font-semibold mb-4">
+            Precio del ejemplar: ${{ horse.horsePrice | number }}
+          </p>
+          <button
+            class= "bg-yellow-700 hover:bg-special text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300"
+          >
+            Comunicarse
+          </button>
+          <button
+          [routerLink]="['/ejemplares', i]"
+          class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded-full transition duration-300 w-full"
+          >
+          Ver detalles
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <app-footer></app-footer>

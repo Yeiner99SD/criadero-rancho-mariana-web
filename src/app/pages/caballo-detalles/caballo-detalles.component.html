@@ -1,0 +1,32 @@
+
+<app-header></app-header>
+
+
+
+
+<div *ngIf="horse" class="bg-zinc-900 min-h-screen text-white py-10 px-4">
+    <div class="max-w-4xl mx-auto bg-zinc-800 rounded-xl shadow-xl p-6">
+      <img [src]="horse.image" [alt]="horse.name" class="w-full h-80 object-cover rounded-lg mb-6" />
+  
+      <h2 class="text-3xl font-bold mb-2">{{ horse.name }}</h2>
+      <p class="text-zinc-300 text-lg mb-4">{{ horse.description }}</p>
+  
+      <div class="mb-4">
+        <p class="text-green-400 text-xl font-semibold">
+          Precio del servicio: ${{ horse.servicePrice | number }}
+        </p>
+        <p class="text-blue-400 text-xl font-semibold">
+          Precio del ejemplar: ${{ horse.horsePrice | number }}
+        </p>
+      </div>
+  
+      <button
+        class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition duration-300"
+      >
+        Comprar ahora
+      </button>
+    </div>
+  </div>
+
+
+  <app-footer> </app-footer>

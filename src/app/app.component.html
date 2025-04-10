@@ -4,7 +4,7 @@
 
 <button
   class="fixed bottom-6 right-6 bg-special text-white p-3 rounded-full shadow-lg hover:bg-header transition transform hover:scale-110"
-  [ngClass]="{ 'animate-bounce': isBouncing, 'opacity-0 transition-opacity duration-500': !isBouncing }"
+  
   *ngIf="isVisible"
   (click)="scrollToTop()"
   aria-label="Volver arriba">

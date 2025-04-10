@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 export const routes: Routes = [
@@ -19,13 +20,25 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/ejemplares/ejemplares.component').then((c) => c.EjemplaresComponent)
     },
     {
+        path: 'ejemplares/:id',
+        loadComponent: () => import('./pages/caballo-detalles/caballo-detalles.component').then((c) => c.CaballoDetallesComponent)
+    },
+    {
         path: 'contacto',
         loadComponent: () => import('./pages/contacto/contacto.component').then((c)=> c.ContactoComponent)
     },
     {
+        path: '404',
+        component: NotFoundComponent
+    },
+    {
         path: '',
-        redirectTo: 'home',
+        redirectTo: '/home',
         pathMatch: 'full'
-    }
-       
+    } ,      
+    {
+        path: '**',
+        redirectTo: '/404',
+        pathMatch: 'full'
+    },
 ];

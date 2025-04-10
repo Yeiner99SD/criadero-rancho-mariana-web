@@ -20,7 +20,8 @@ module.exports = {
       heroescuela: 'url(/images/poster.webp)',
       escuela: 'url(/images/imagenescuelaRM.png)',
       herogaleria: 'url(/images/Ensilladero.jpg)',
-      torno: 'url(/images/torno.jpg)'
+      torno: 'url(/images/torno.jpg)',
+      heroejemplares: 'url(/images/heroejemplares.jpg)'
     },
     extend: {
       colors: {
